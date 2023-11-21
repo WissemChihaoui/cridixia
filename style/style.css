@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500&family=Roboto+Slab:wght@200;300&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background: #FFF;
+    overflow: hidden;
+    max-width: 100vw;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+/*Nav*/
+nav{
+    background: #E33078;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    padding: 12px 60px;
+    font-family: Roboto Slab;
+    font-size: 12px;
+}
+nav ul{
+    display: flex;
+    gap: 32px;
+}
+nav ul li{
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+}
+nav ul li:hover{
+    text-decoration: underline;
+
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    width: 50%;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    color: #404040;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+header .btn-group{
+    display: flex;
+    gap: 4px;
+}
+header .btn-group button{
+    background: var(--i);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+header .btn-group button:hover{
+    box-shadow: 1px 10px 17px -8px rgba(0,0,0,0.86);
+    -webkit-box-shadow: 1px 10px 17px -8px rgba(0,0,0,0.86);
+    -moz-box-shadow: 1px 10px 17px -8px rgba(0,0,0,0.86);
+}
+/*Section*/
+section{
+    background: #0480BB;
+    color: #fff;
+    display: flex;
+
+   
+    position: relative;
+    overflow: hidden;
+}
+section .background-victors{
+    position: absolute;
+    left: 66%;
+
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .background-victors img{
+    position: absolute;
+    width: calc(800px + (43px * var(--x)));
+    stroke-width: 2.128px;
+    stroke: #2494CA;
+    mix-blend-mode: overlay;
+}
+section .data{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+section .data{
+    margin: 100px 26px 0px 150px;
+    z-index: 1000;
+}
+section .data .header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+section .data .header-text h2{
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: Marcellus;
+}
+section .data .header-text .details{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 26px;
+    font-family: Roboto Slab;
+}
+section .data .option-group{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+section .data .option-group button{
+    background: #FFF9FB;
+    color: #000;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 28px 45px 32px 45px;
+    font-family: Montserrat;
+    width: 100%;
+    white-space: nowrap;
+}
+section .pics{
+    position: relative;
+    width: 100%;
+}
+section .pics > img{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    right: 20%;
+}
+section .pics .icon-header{
+    position: absolute;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 10px;
+    z-index: 100;
+    width: min-content;
+    height: min-content;
+}
+
+section .pics .testimonial{
+    top: 50%;
+    z-index: 100;
+    position: relative;
+    left: 30%;
+    width: 50%;
+
+}
+section .pics .testimonial .testimonial-container{
+    background: #FFF;
+    color: #083120;
+    max-width: 300px;
+    padding: 20px 14px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: Montserrat;
+}
+section .pics .testimonial .icon{
+    position: absolute;
+    bottom: 70%;
+    left: -2%;
+}
+@media screen and (max-width:1540px) {
+    section .data .option-group button{
+        font-size: 20px;
+        padding: 5px 12px 10px 12px;
+    }
+}
+@media screen and (max-width:1214px){
+    section .data{
+        margin: 80px 26px 0px 70px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        padding: 12px;
+    }
+    header .logo img{
+        width: 60px;
+    }
+    header .btn-group button{
+        font-size: 8px;
+        padding: 10px 18px;
+    }
+    header ul li{
+        font-size: 10px;
+    }
+    header ul li img{
+        width: 16px;
+    }
+    section .data {
+        margin: 94px 0px 0px 70px;
+    }
+    section .data .option-group button{
+        font-size: 16px;
+        padding: 5px 12px 10px 12px;
+    }
+    section .data .header-text h2{
+        font-size: 36px;
+    }
+    section .data .header-text .details {
+        font-size: 16px;
+    }
+    section .data .option-group{
+        gap: 12px;
+    }
+    section .data .option-group button img{
+        height: 50px;
+    }
+}
+
+/*Menu Ham*/
+.menu-ham {
+    display: none;
+    height: min-content;
+    z-index: 10000;
+}
+
+.menu-ham .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    width: 36px;
+    
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+/*Menu Container*/
+.menu-container{
+    display: none;
+    position: absolute;
+  width: 180px;
+  top: 70px;
+  right: -10px;
+  box-shadow: 0 0 10px #85888C;
+  z-index: 9900;
+  padding: 24px;
+  padding-top: 40px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  font-family: Montserrat;
+}
+.menu-container.show-menu{
+    transform: none;
+    right: 10px;
+    display: block;
+}
+.menu-container ul{
+ display: flex;
+ flex-direction: column;
+gap: 12px;
+}
+.menu-container ul li{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    color: #404040;
+    font-size: 16px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menu-container hr{
+    margin: 12px 0px;
+}
+.menu-container .btn-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.menu-container .btn-group button{
+    background: var(--i);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 12px 12px;
+    }
+    header .btn-group,
+    header ul{
+       display: none;
+    }
+    .menu-ham{
+        display: block;
+    }
+    .menu-container{
+        display: block;
+    }
+    section .pics{
+        display: none;
+    }
+    section .data{
+        margin: 24px 40px;
+    }
+}
+@media screen and (max-width: 675px) {
+    section .data .option-group button img{
+        height: 24px;
+    }
+    section .data .option-group button{
+        font-size: 12px;
+    }
+}
+@media (max-width: 375px) {
+    nav{
+        display: none;
+    }
+}
